@@ -8,6 +8,7 @@ import {
 	FaJs,
 	FaGitAlt,
 	FaJava,
+	FaPython,
 } from "react-icons/fa";
 import {
 	SiMongodb,
@@ -97,6 +98,11 @@ const skills = [
 		icon: <SiSpring className="text-green-700" />,
 		category: "Backend",
 	},
+	{
+		name: "Python",
+		icon: <FaPython className="text-blue-400" />,
+		category: "Backend",
+	},
 ];
 
 const filters = ["All", "Frontend", "Backend", "Tools"];
@@ -127,7 +133,7 @@ export default function Skills() {
 	return (
 		<section
 			id="skills"
-			className="py-20 bg-gray-50 dark:bg-gray-900 transition-colors duration-500"
+			className="py-20 bg-gradient-to-b from-gray-50 via-white to-white dark:from-[#111827] dark:via-[#111827] dark:to-[#131b2b] transition-colors duration-500"
 		>
 			<h2 className="text-3xl font-bold text-center mb-6 text-gray-900 dark:text-white">
 				My <span className="text-purple-600">Skills</span>
